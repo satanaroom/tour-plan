@@ -524,6 +524,12 @@ template {
   justify-content: space-between;
 }
 
+.hotel-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .stars {
   flex-basis: 100%;
 }
@@ -705,6 +711,13 @@ template {
   border: none;
   color: #fff;
   cursor: pointer;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  background-color: #919191;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
