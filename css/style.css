@@ -930,7 +930,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel__slide {
     width: 590px;
   }
   .hotel-slider__image {
