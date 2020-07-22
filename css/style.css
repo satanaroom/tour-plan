@@ -533,6 +533,7 @@ template {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin-right: 30px;
 }
 
 .hotel-slider__item {
@@ -822,7 +823,7 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
@@ -932,7 +933,7 @@ template {
   .slider {
     width: 590px;
   }
-  .swiper-slide__image {
+  .hotel-slider__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -974,14 +975,17 @@ template {
   .hotel-action {
     flex-direction: row;
   }
+  .hotel-slider {
+    width: 100%;
+  }
   .booking {
     width: 340px;
   }
-  .slider {
-    width: 100%;
-  }
   .map {
     width: 340px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1033,12 +1037,12 @@ template {
     order: -1;
     margin-left: 0;
   }
-  .slider {
-    height: 350px;
-  }
   .hotel-action {
     flex-direction: column;
     min-height: 450px;
+  }
+  .hotel-slider {
+    height: 350px;
   }
   .booking {
     width: 100%;
@@ -1052,6 +1056,33 @@ template {
     flex-direction: column;
     align-items: flex-start;
   }
+  .reviews__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::before, .reviews-slider__item::after {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    margin-left: -65px;
+    transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    margin-right: -65px;
+    transform: translate(50%, 0);
+  }
 }
 
 @media (max-width: 576px) {
@@ -1061,11 +1092,11 @@ template {
   .logo {
     width: 99px;
   }
-  .slider {
-    height: 250px;
-  }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .hotel-slider {
+    height: 250px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
@@ -1084,9 +1115,24 @@ template {
     font-weight: 600;
     font-size: 30px;
     line-height: 38px;
+    margin-top: 5px;
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews__title {
+    margin: 0;
+    padding: 0 38px 42px;
+    font-style: normal;
+    font-weight: bol;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .reviews-slider__username {
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
