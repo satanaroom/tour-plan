@@ -7,6 +7,7 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".slider-button--next",
     prevEl: ".slider-button--prev",
   },
+
   // Перелистывание с клавиатуры
   keyboard: {
     enabled: true,
