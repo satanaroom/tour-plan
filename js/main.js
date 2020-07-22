@@ -14,3 +14,11 @@ var mySwiper = new Swiper(".swiper-container", {
     onlyInViewport: false,
   },
 });
+
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [37.58903142, 126.93428341],
+    zoom: 12,
+  });
+}
