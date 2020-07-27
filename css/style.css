@@ -1189,26 +1189,6 @@ template {
     width: 230px;
     height: 230px;
   }
-  .packages-grid {
-    align-self: center;
-  }
-  .packages-grid__top {
-    align-self: center;
-    justify-self: center;
-    grid-template-rows: 500px;
-  }
-  .packages-grid__bottom {
-    align-self: center;
-    justify-self: center;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 500px;
-  }
-  .packages-grid__book {
-    margin-bottom: 30px;
-  }
-  .packages-grid__element-1, .packages-grid__element-5 {
-    display: none;
-  }
 }
 
 @media (max-width: 992px) {
