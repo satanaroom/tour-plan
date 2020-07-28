@@ -1480,6 +1480,10 @@ template {
   .logo {
     width: 99px;
   }
+  .search__input {
+    max-width: 245px;
+    height: 40px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }
