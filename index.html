@@ -7,13 +7,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
-      />
+    />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=2c5cd975-54e2-410e-899f-f2b579e00c86&lang=ru_RU"></script>
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2c5cd975-54e2-410e-899f-f2b579e00c86&lang=ru_RU"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js-1.5.0/parallax.js"></script>
   </head>
   <body>
@@ -25,15 +23,17 @@
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
-              />
+            />
           </a>
-          <form action="#" class="search navbar__search
-            navbar__search--mobile--hidden">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
               placeholder="Search Location"
-              />
+            />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
@@ -43,7 +43,7 @@
               src="img/user-avatar.jpeg"
               alt="Avatar: Nathan"
               class="user__avatar"
-              />
+            />
             <span class="user__name">Nathan</span>
           </a>
           <!-- /.user -->
@@ -59,25 +59,35 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
-            <li class="navbar-menu__item navbar-menu__item--mobile--visible"><a
-                href="#" class="user navbar__user
-                navbar__user--mobile--visible">
-                <img src="img/user-avatar.jpeg" alt="Avatar: Nathan"
-                  class="user__avatar" />
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a
+                href="#"
+                class="user navbar__user navbar__user--mobile--visible"
+              >
+                <img
+                  src="img/user-avatar.jpeg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
                 <span class="user__name user__name--light">Nathan</span>
               </a>
-              <!-- /.user --></li>
-            <li class="navbar-menu__item navbar-menu__item--mobile--visible"><form
-                action="#" class="search navbar__search
-                navbar__search--mobile--visible">
+              <!-- /.user -->
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile--visible"
+              >
                 <input
                   type="text"
                   class="search__input"
-                  placeholder="Search Location" />
+                  placeholder="Search Location"
+                />
                 <button class="search__button">
                   <img src="img/search.svg" alt="Icon: search" />
                 </button>
-              </form></li>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -146,7 +156,11 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
-          <div class="rating hotel-info__rating">
+          <div
+            data-toggle="modal"
+            data-href="#rating-modal"
+            class="rating hotel-info__rating"
+          >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
           </div>
@@ -164,43 +178,45 @@
                   class="hotel-slider__image"
                   src="img/slide-1.jpg"
                   alt="slide-1"
-                  />
+                />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
                   src="img/slide-2.jpg"
                   alt="slide-2"
-                  />
+                />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
                   src="img/slide-3.jpg"
                   alt="slide-3"
-                  />
+                />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
                   src="img/slide-4.jpg"
                   alt="slide-4"
-                  />
+                />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
                   src="img/slide-5.jpg"
                   alt="slide-5"
-                  />
+                />
               </div>
             </div>
 
             <!-- If we need navigation buttons -->
             <button
-              class="hotel-slider__button hotel-slider__button--prev"></button>
+              class="hotel-slider__button hotel-slider__button--prev"
+            ></button>
             <button
-              class="hotel-slider__button hotel-slider__button--next"></button>
+              class="hotel-slider__button hotel-slider__button--next"
+            ></button>
           </div>
           <!-- /.swiper-container -->
           <div class="hotel-action">
@@ -218,7 +234,7 @@
                       src="img/user.svg"
                       alt="Icon: user"
                       class="booking__icon"
-                      />
+                    />
                     <span class="booking__description">2 x Guests</span>
                   </div>
                   <div class="booking__text">
@@ -226,7 +242,7 @@
                       src="img/home.svg"
                       alt="Icon: home"
                       class="booking__icon"
-                      />
+                    />
                     <span class="booking__description">1 x Room</span>
                   </div>
                 </div>
@@ -241,7 +257,13 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button
+                data-toggle="modal"
+                data-href="#booking-modal"
+                class="button booking__button"
+              >
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -260,20 +282,24 @@
       data-parallax="scroll"
       data-z-index="1"
       data-speed="0.7"
-      data-image-src="img/newsletter-bg.jpg">
+      data-image-src="img/newsletter-bg.jpg"
+    >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="send.php" method="POST" class="subscribe
-          newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
-            />
+          />
           <button class="subscribe__button">Send</button>
         </form>
       </div>
@@ -291,7 +317,7 @@
                     src="img/reviews-avatar-1.jpg"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
-                    />
+                  />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
@@ -326,7 +352,7 @@
                     src="img/reviews-avatar-2.jpg"
                     alt="Photo: Robert Baratheon"
                     class="reviews-slider__avatar"
-                    />
+                  />
                   <h3 class="reviews-slider__username">Robert Baratheon</h3>
                   <span class="reviews-slider__date">Stayed 1 Nov, 2015</span>
                   <div class="reviews-slider__rating">
@@ -366,7 +392,7 @@
                     src="img/reviews-avatar-3.jpg"
                     alt="Photo: John Snow"
                     class="reviews-slider__avatar"
-                    />
+                  />
                   <h3 class="reviews-slider__username">John Snow</h3>
                   <span class="reviews-slider__date">Stayed 5 Dec, 2017</span>
                   <div class="reviews-slider__rating">
@@ -402,7 +428,7 @@
                     src="img/reviews-avatar-4.jpg"
                     alt="Photo: Theon Grayjoy"
                     class="reviews-slider__avatar"
-                    />
+                  />
                   <h3 class="reviews-slider__username">Theon Grayjoy</h3>
                   <span class="reviews-slider__date">Stayed 11 May, 2009</span>
                   <div class="reviews-slider__rating">
@@ -440,7 +466,7 @@
                     src="img/reviews-avatar-5.jpg"
                     alt="Photo: Hodor"
                     class="reviews-slider__avatar"
-                    />
+                  />
                   <h3 class="reviews-slider__username">Hodor</h3>
                   <span class="reviews-slider__date">Stayed 30 Sep, 2014</span>
                   <div class="reviews-slider__rating">
@@ -463,9 +489,11 @@
           </div>
           <!-- /.swiper-wrapper -->
           <button
-            class="reviews-slider__button reviews-slider__button--prev"></button>
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
           <button
-            class="reviews-slider__button reviews-slider__button--next"></button>
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
         </div>
         <!-- /.reviews-slider -->
       </div>
@@ -480,7 +508,7 @@
               src="img/activity-1.jpg"
               alt="The blue marine discovery quest"
               class="card__image"
-              />
+            />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
           </div>
@@ -490,7 +518,7 @@
               src="img/activity-2.jpg"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
-              />
+            />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
@@ -500,7 +528,7 @@
               src="img/activity-3.jpg"
               alt="Gymkhana club golf course"
               class="card__image"
-              />
+            />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
@@ -510,7 +538,7 @@
               src="img/activity-4.jpg"
               alt="The curious corner of chamarel"
               class="card__image"
-              />
+            />
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
@@ -527,7 +555,7 @@
             src="img/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
             class="logo footer__logo"
-            />
+          />
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -576,7 +604,8 @@
                 <a href="#" class="footer__link">Deals.mu loyalty program </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Promote your Business on BTP
+                <a href="#" class="footer__link"
+                  >Promote your Business on BTP
                 </a>
               </li>
             </ul>
@@ -585,15 +614,15 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"><img src="img/facebook.svg"
-                  alt="Icon: facebook"
-                  /></a>
-              <a href="#" class="footer__link"><img src="img/youtube.svg"
-                  alt="Icon: youtube"
-                  /></a>
-              <a href="#" class="footer__link"><img src="img/instagram.svg"
-                  alt="Icon: instagram"
-                  /></a>
+              <a href="#" class="footer__link"
+                ><img src="img/facebook.svg" alt="Icon: facebook"
+              /></a>
+              <a href="#" class="footer__link"
+                ><img src="img/youtube.svg" alt="Icon: youtube"
+              /></a>
+              <a href="#" class="footer__link"
+                ><img src="img/instagram.svg" alt="Icon: instagram"
+              /></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
@@ -602,8 +631,8 @@
             <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
-                newsletter <a href="#" class="footer__link">Terms & Conditions
-                </a>
+                newsletter
+                <a href="#" class="footer__link">Terms & Conditions </a>
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">Disclaimer</a>
@@ -629,7 +658,7 @@
                     class="footer__icon"
                     src="img/map-marker.svg"
                     alt="Icon: map"
-                    />
+                  />
                 </div>
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
@@ -640,7 +669,7 @@
                     class="footer__icon"
                     src="img/contact-phone-call.svg"
                     alt="Icon: phone call"
-                    />
+                  />
                 </div>
                 Tel (business hours) : 269 1500 <br />
                 Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
@@ -653,7 +682,7 @@
                     class="footer__icon"
                     src="img/email.svg"
                     alt="Icon: email"
-                    />
+                  />
                 </div>
                 cherly.lawson@example.com
               </li>
@@ -668,16 +697,17 @@
                 class="input footer__input"
                 placeholder="Your Full Name*"
                 name="name"
-                /><input
+              /><input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
                 name="phone"
-                />
+              />
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
-                name="message"></textarea>
+                name="message"
+              ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
@@ -688,6 +718,82 @@
       </div>
       <!-- /.container -->
     </footer>
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          /><input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="rating-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          /><input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <nav class="bottom">
       <div class="container">
         <div class="bottom-line">
@@ -702,13 +808,19 @@
               <a href="#" class="bottom-list__link">Cancellation policy</a>
             </li>
           </ul>
-          <img src="img/payment.jpg" alt="Image: payment"
-            class="bottom__payment"></div>
+          <img
+            src="img/payment.jpg"
+            alt="Image: payment"
+            class="bottom__payment"
+          />
+        </div>
+
         <!-- /.bottom-line -->
       </div>
       <!-- /.container -->
     </nav>
     <!-- /.bottom -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
