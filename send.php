@@ -67,4 +67,9 @@ try {
 }
 
 // Отображение результата
-header('Location:thankyou.html');
+
+if ($email) {
+  header('Location:newsletter.html');
+} else {
+  header('Location:thankyou.html');
+}
