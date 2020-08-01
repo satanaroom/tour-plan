@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour plan";
@@ -16,6 +17,13 @@ $body = "
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
+";
+
+$titleNewsletter = "Подписка на новости";
+$bodyNewsletter = "
+<h2>Новая подписка</h2>
+<b>Email:</b> $email<br>
+
 ";
 
 // Настройки PHPMailer
@@ -43,7 +51,9 @@ try {
   // Отправка сообщения
   $mail->isHTML(true);
   $mail->Subject = $title;
+  $mail->Subject = $titleNewsletter;
   $mail->Body = $body;
+  $mail->Body = $bodyNewsletter;
 
   // Проверяем отравленность сообщения
   if ($mail->send()) {
