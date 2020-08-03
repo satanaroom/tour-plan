@@ -98,8 +98,8 @@ $(document).ready(function () {
         },
       },
     });
-    $(".special-form").validate({
-      errorClass: "special",
+    $(".special").validate({
+      errorClass: "subscr",
       messages: {
         email: {
           required: "We need your email address to contact you",

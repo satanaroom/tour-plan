@@ -1311,21 +1311,17 @@ template {
   z-index: 200;
 }
 
-.special {
+.subscr {
   position: absolute;
+  padding: 5px 0 0 5px;
   display: flex;
   text-align: left;
   align-items: center;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-left: 10px;
-  height: 55px;
-  width: 285px;
-  background-color: #fff;
-  color: #EC1F46;
   z-index: 1;
+  border: none;
+  max-width: 285px;
+  font-size: 9px;
+  color: #EC1F46;
 }
 
 @media (max-width: 1200px) {
