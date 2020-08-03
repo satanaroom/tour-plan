@@ -14,7 +14,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -66,11 +67,11 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-row: 1 / 2
-      grid-column: span 2
-      
+      grid-column: span 2  
     &__social
       &-network
         grid-row: 1 / 2
@@ -226,7 +227,8 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
   .modal
     &__dialog
       padding: 33px 44px
