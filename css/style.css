@@ -838,6 +838,7 @@ template {
   line-height: 18px;
   z-index: 2;
   outline: none;
+  border-radius: 4px;
 }
 
 .subscribe__button {
@@ -851,6 +852,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  border-radius: 0 4px 4px 0;
   overflow: hidden;
   z-index: 5;
 }
