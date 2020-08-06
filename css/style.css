@@ -850,6 +850,7 @@ template {
   right: 0;
   height: 100%;
   border: none;
+  outline: none;
   background-color: #EC1F46;
   color: #fff;
   border-radius: 0 4px 4px 0;

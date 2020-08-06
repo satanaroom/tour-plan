@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
       />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script
@@ -25,6 +26,9 @@
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="500"
               />
           </a>
           <form
@@ -44,8 +48,13 @@
               src="img/user-avatar.jpeg"
               alt="Avatar: Nathan"
               class="user__avatar"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="500"
               />
-            <span class="user__name">Nathan</span>
+            <span class="user__name" data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="500">Nathan</span>
           </a>
           <!-- /.user -->
           <button class="menu-button navbar-top__menu-button">
@@ -279,7 +288,11 @@
       data-speed="0.7"
       data-image-src="img/newsletter-bg.jpg">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2 class="newsletter-title newsletter__title"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -301,7 +314,10 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people thinks about us</h2>
+        <h2 class="reviews__title"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000">What people thinks about us</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -495,7 +511,10 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="200">
             <img
               src="img/activity-1.jpg"
               alt="The blue marine discovery quest"
@@ -505,7 +524,10 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="400">
             <img
               src="img/activity-2.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -515,7 +537,10 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="600">
             <img
               src="img/activity-3.jpg"
               alt="Gymkhana club golf course"
@@ -525,7 +550,10 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="800">
             <img
               src="img/activity-4.jpg"
               alt="The curious corner of chamarel"
@@ -681,7 +709,9 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-3"
+              data-aos="fade-up"
+              data-aos-duration="1000">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
                 <input
@@ -824,6 +854,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
