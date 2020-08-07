@@ -10,9 +10,11 @@
     align-items: start
   &__logo
     grid-row: 1 / 3
+    grid-column: 1 / 2
     width: 166px
     align-self: stretch
   &__categories
+    grid-column: 2 / 3
     grid-row: 1 / 4
   &__social
     &-links
@@ -87,7 +89,14 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
-  
+  &__tel
+    color: $footer-text-color
+    display: flex
+    flex-wrap: wrap
+  &__business,
+  &__workday,
+  &__vacation
+    flex-basis: 100%
     
     
 
