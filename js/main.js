@@ -110,4 +110,9 @@ $(document).ready(function () {
     },
   });
   AOS.init();
+
+  $.mask, (definitions["-"] = "[A-Fa-f0-9]");
+  jQuery(function ($) {
+    $("input[type='tel']").mask("+7(999)999-99-99");
+  });
 });

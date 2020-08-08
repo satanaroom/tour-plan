@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
-      />
+    />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script
       defer
-      src="https://api-maps.yandex.ru/2.1/?apikey=2c5cd975-54e2-410e-899f-f2b579e00c86&lang=ru_RU"></script>
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      src="https://api-maps.yandex.ru/2.1/?apikey=2c5cd975-54e2-410e-899f-f2b579e00c86&lang=ru_RU"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script defer src="js/parallax.js-1.5.0/parallax.js"></script>
   </head>
   <body>
@@ -32,16 +32,17 @@
               data-aos="fade-right"
               data-aos-easing="linear"
               data-aos-duration="500"
-              />
+            />
           </a>
           <form
             action="#"
-            class="search navbar__search navbar__search--mobile--hidden">
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
               placeholder="Search Location"
-              />
+            />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
@@ -54,12 +55,14 @@
               data-aos="fade-left"
               data-aos-easing="linear"
               data-aos-duration="500"
-              />
+            />
             <span
               class="user__name"
               data-aos="fade-left"
               data-aos-easing="linear"
-              data-aos-duration="500">Nathan</span>
+              data-aos-duration="500"
+              >Nathan</span
+            >
           </a>
           <!-- /.user -->
           <button class="menu-button navbar-top__menu-button">
@@ -77,12 +80,13 @@
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <a
                 href="#"
-                class="user navbar__user navbar__user--mobile--visible">
+                class="user navbar__user navbar__user--mobile--visible"
+              >
                 <img
                   src="img/user-avatar.jpeg"
                   alt="Avatar: Nathan"
                   class="user__avatar"
-                  />
+                />
                 <span class="user__name user__name--light">Nathan</span>
               </a>
               <!-- /.user -->
@@ -90,12 +94,13 @@
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <form
                 action="#"
-                class="search navbar__search navbar__search--mobile--visible">
+                class="search navbar__search navbar__search--mobile--visible"
+              >
                 <input
                   type="text"
                   class="search__input"
                   placeholder="Search Location"
-                  />
+                />
                 <button class="search__button">
                   <img src="img/search.svg" alt="Icon: search" />
                 </button>
@@ -172,7 +177,8 @@
           <div
             data-toggle="modal"
             data-href="#rating-modal"
-            class="rating hotel-info__rating">
+            class="rating hotel-info__rating"
+          >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
           </div>
@@ -190,43 +196,45 @@
                   class="hotel-slider__image"
                   src="img/slide-1.jpg"
                   alt="slide-1"
-                  />
+                />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
                   src="img/slide-2.jpg"
                   alt="slide-2"
-                  />
+                />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
                   src="img/slide-3.jpg"
                   alt="slide-3"
-                  />
+                />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
                   src="img/slide-4.jpg"
                   alt="slide-4"
-                  />
+                />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
                   src="img/slide-5.jpg"
                   alt="slide-5"
-                  />
+                />
               </div>
             </div>
 
             <!-- If we need navigation buttons -->
             <button
-              class="hotel-slider__button hotel-slider__button--prev"></button>
+              class="hotel-slider__button hotel-slider__button--prev"
+            ></button>
             <button
-              class="hotel-slider__button hotel-slider__button--next"></button>
+              class="hotel-slider__button hotel-slider__button--next"
+            ></button>
           </div>
           <!-- /.swiper-container -->
           <div class="hotel-action">
@@ -244,7 +252,7 @@
                       src="img/user.svg"
                       alt="Icon: user"
                       class="booking__icon"
-                      />
+                    />
                     <span class="booking__description">2 x Guests</span>
                   </div>
                   <div class="booking__text">
@@ -252,7 +260,7 @@
                       src="img/home.svg"
                       alt="Icon: home"
                       class="booking__icon"
-                      />
+                    />
                     <span class="booking__description">1 x Room</span>
                   </div>
                 </div>
@@ -270,7 +278,9 @@
               <button
                 data-toggle="modal"
                 data-href="#booking-modal"
-                class="button booking__button">
+                class="button booking__button"
+                minlength="12"
+              >
                 View Other Options
               </button>
             </div>
@@ -291,28 +301,31 @@
       data-parallax="scroll"
       data-z-index="1"
       data-speed="0.7"
-      data-image-src="img/newsletter-bg.jpg">
+      data-image-src="img/newsletter-bg.jpg"
+    >
       <div class="newsletter-wrapper">
         <h2
           class="newsletter-title newsletter__title"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-delay="300"
-          data-aos-offset="0">
+          data-aos-offset="0"
+        >
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe special">
+          class="subscribe newsletter__subscribe special"
+        >
           <input
             type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
             required
-            />
+          />
           <button class="subscribe__button">Send</button>
         </form>
       </div>
@@ -324,7 +337,8 @@
           class="reviews__title"
           data-aos="fade-down"
           data-aos-easing="linear"
-          data-aos-duration="1000">
+          data-aos-duration="1000"
+        >
           What people thinks about us
         </h2>
         <div class="swiper-container reviews-slider">
@@ -336,7 +350,7 @@
                     src="img/reviews-avatar-1.jpg"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
-                    />
+                  />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
@@ -371,7 +385,7 @@
                     src="img/reviews-avatar-2.jpg"
                     alt="Photo: Robert Baratheon"
                     class="reviews-slider__avatar"
-                    />
+                  />
                   <h3 class="reviews-slider__username">Robert Baratheon</h3>
                   <span class="reviews-slider__date">Stayed 1 Nov, 2015</span>
                   <div class="reviews-slider__rating">
@@ -411,7 +425,7 @@
                     src="img/reviews-avatar-3.jpg"
                     alt="Photo: John Snow"
                     class="reviews-slider__avatar"
-                    />
+                  />
                   <h3 class="reviews-slider__username">John Snow</h3>
                   <span class="reviews-slider__date">Stayed 5 Dec, 2017</span>
                   <div class="reviews-slider__rating">
@@ -447,7 +461,7 @@
                     src="img/reviews-avatar-4.jpg"
                     alt="Photo: Theon Grayjoy"
                     class="reviews-slider__avatar"
-                    />
+                  />
                   <h3 class="reviews-slider__username">Theon Grayjoy</h3>
                   <span class="reviews-slider__date">Stayed 11 May, 2009</span>
                   <div class="reviews-slider__rating">
@@ -485,7 +499,7 @@
                     src="img/reviews-avatar-5.jpg"
                     alt="Photo: Hodor"
                     class="reviews-slider__avatar"
-                    />
+                  />
                   <h3 class="reviews-slider__username">Hodor</h3>
                   <span class="reviews-slider__date">Stayed 30 Sep, 2014</span>
                   <div class="reviews-slider__rating">
@@ -508,9 +522,11 @@
           </div>
           <!-- /.swiper-wrapper -->
           <button
-            class="reviews-slider__button reviews-slider__button--prev"></button>
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
           <button
-            class="reviews-slider__button reviews-slider__button--next"></button>
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
         </div>
         <!-- /.reviews-slider -->
       </div>
@@ -524,56 +540,84 @@
             class="card activities__card"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="200">
+            data-aos-duration="200"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The blue marine discovery quest"
               class="card__image"
-              />
+            />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div
             class="card activities__card"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="400">
+            data-aos-duration="400"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
-              />
+            />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div
             class="card activities__card"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="600">
+            data-aos-duration="600"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Gymkhana club golf course"
               class="card__image"
-              />
+            />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div
             class="card activities__card"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The curious corner of chamarel"
               class="card__image"
-              />
+            />
             <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
         </div>
@@ -584,11 +628,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="https://karpovroom.ru/homeworks/tour-plan/"><img
+          <a href="https://karpovroom.ru/homeworks/tour-plan/"
+            ><img
               src="img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo footer__logo"
-              />
+            />
           </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -638,7 +683,8 @@
                 <a href="#" class="footer__link">Deals.mu loyalty program </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Promote your Business on BTP
+                <a href="#" class="footer__link"
+                  >Promote your Business on BTP
                 </a>
               </li>
             </ul>
@@ -647,15 +693,15 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"><img src="img/facebook.svg"
-                  alt="Icon: facebook"
-                  /></a>
-              <a href="#" class="footer__link"><img src="img/youtube.svg"
-                  alt="Icon: youtube"
-                  /></a>
-              <a href="#" class="footer__link"><img src="img/instagram.svg"
-                  alt="Icon: instagram"
-                  /></a>
+              <a href="#" class="footer__link"
+                ><img src="img/facebook.svg" alt="Icon: facebook"
+              /></a>
+              <a href="#" class="footer__link"
+                ><img src="img/youtube.svg" alt="Icon: youtube"
+              /></a>
+              <a href="#" class="footer__link"
+                ><img src="img/instagram.svg" alt="Icon: instagram"
+              /></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
@@ -691,7 +737,7 @@
                     class="footer__icon"
                     src="img/map-marker.svg"
                     alt="Icon: map"
-                    />
+                  />
                 </div>
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
@@ -702,7 +748,7 @@
                     class="footer__icon"
                     src="img/contact-phone-call.svg"
                     alt="Icon: phone call"
-                    />
+                  />
                 </div>
                 <div class="footer__tel">
                   <div class="footer__business">
@@ -710,8 +756,9 @@
                     <a href="tel:2691500" class="footer__link">269 1500</a>
                   </div>
                   <div class="footer__workday">
-                    <span class="footer__contact">Tel (hotline) Monday -
-                      Saturday:</span>
+                    <span class="footer__contact"
+                      >Tel (hotline) Monday - Saturday:</span
+                    >
                     <a href="tel:52566138" class="footer__link">52-56-61-38</a>
                     <span class="footer__contact">(08:00 am – 20:00 pm)</span>
                   </div>
@@ -728,9 +775,11 @@
                     class="footer__icon"
                     src="img/email.svg"
                     alt="Icon: email"
-                    />
+                  />
                 </div>
-                <a href="mailto:cherly.lawson@example.com" class="footer__link">cherly.lawson@example.com</a>
+                <a href="mailto:cherly.lawson@example.com" class="footer__link"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -739,7 +788,8 @@
             <h3
               class="footer__title footer__title--mb-3"
               data-aos="fade-up"
-              data-aos-duration="1000">
+              data-aos-duration="1000"
+            >
               Send us a message
             </h3>
             <form action="send.php" method="POST" class="footer__form form">
@@ -750,7 +800,7 @@
                   placeholder="Your Full Name*"
                   name="name"
                   required
-                  />
+                />
               </div>
               <div class="footer__input-group">
                 <input
@@ -758,13 +808,15 @@
                   class="input footer__input"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="12"
                   required
-                  />
+                />
               </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message"
-                name="message"></textarea>
+                name="message"
+              ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
@@ -790,24 +842,26 @@
             placeholder="Your Full Name*"
             name="name"
             required
-            /><input
+          /><input
             type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            minlength="12"
             required
-            />
+          />
           <input
             type="email"
             class="input modal__input"
             placeholder="Your Email*"
             name="email"
             required
-            />
+          />
           <textarea
             class="message modal__message"
             placeholder="Message"
-            name="message"></textarea>
+            name="message"
+          ></textarea>
           <button class="button modal__button" type="submit">Send</button>
           <span class="modal__info">* Required Fields</span>
         </form>
@@ -830,24 +884,25 @@
             placeholder="Your Full Name*"
             name="name"
             required
-            /><input
+          /><input
             type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
             required
-            />
+          />
           <input
             type="email"
             class="input modal__input"
             placeholder="Your Email*"
             name="email"
             required
-            />
+          />
           <textarea
             class="message modal__message"
             placeholder="Message"
-            name="message"></textarea>
+            name="message"
+          ></textarea>
           <button class="button modal__button" type="submit">Send</button>
           <span class="modal__info">* Required Fields</span>
         </form>
@@ -873,7 +928,7 @@
             src="img/payment.jpg"
             alt="Image: payment"
             class="bottom__payment"
-            />
+          />
         </div>
 
         <!-- /.bottom-line -->
