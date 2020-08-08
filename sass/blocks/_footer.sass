@@ -1,17 +1,19 @@
 .footer
-  background-color: $dark
+  background-color: $dark 
   color: $white
-  padding: 180px 0 102px 0
+  padding: 108px 0 102px 0
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-template-columns: 265px 260px 330px 1fr
     grid-gap: 20px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
   &__logo
+    display: flex
     grid-row: 1 / 2
     grid-column: 1 / 2
-    width: 166px
+    margin-top: 10px
+    width: 150px
     align-self: stretch
   &__categories
     grid-column: 2 / 3
