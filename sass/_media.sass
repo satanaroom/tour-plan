@@ -244,7 +244,7 @@
       padding: 33px 44px
 @media (max-width: 576px)
   .container
-    max-width: 320px
+    min-width: 320px
   .logo
     width: 99px
   .search 
@@ -291,7 +291,7 @@
     width: 100%
   .footer
     &-wrapper
-      grid-template-columns: 320px
+      grid-template-columns: minmax(320px, 600px)
     &__logo
       grid-row: 1
       grid-column: 1
@@ -320,6 +320,8 @@
       &-form
         grid-row: 7  
         grid-column: 1
+    &__input
+      width: 100%
     &__button
       order: 2
     &__info
