@@ -33,31 +33,6 @@ $(document).ready(function () {
     },
   });
 
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [37.58903142, 126.93428341],
-      zoom: 12,
-    });
-    (myGeoObject = new ymaps.GeoObject(
-      {
-        geometry: {
-          type: "Point",
-          coordinates: [37.58903142, 126.93428341],
-        },
-        properties: {
-          iconContent: "Grand Hilton Hotel",
-          hintContent: "Grand Hilton Hotel",
-        },
-      },
-      {
-        preset: "islands#blackStretchyIcon",
-        draggable: true,
-      }
-    )),
-      myMap.geoObjects.add(myGeoObject);
-  }
-
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");

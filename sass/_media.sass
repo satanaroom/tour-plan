@@ -243,8 +243,11 @@
     &__dialog
       padding: 33px 44px
 @media (max-width: 576px)
+  .body
+    overflow: hidden
   .container
-    min-width: 320px
+    max-width: 320px
+    width: 92%
   .logo
     width: 99px
   .search 
@@ -291,7 +294,7 @@
     width: 100%
   .footer
     &-wrapper
-      grid-template-columns: minmax(320px, 600px)
+      grid-template-columns: 320px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -315,18 +318,19 @@
       grid-column: 1
     &__contact
       &-details
+        width: 70%
         grid-row: 6
         grid-column: 1
       &-form
         grid-row: 7  
         grid-column: 1
-    &__input
-      width: 100%
     &__button
       order: 2
     &__info
       flex-basis: 100%
       margin-bottom: 15px
+    &__form
+      width: 92% 
     &__message
       margin-bottom: 15px
   .bottom 
@@ -339,8 +343,15 @@
       margin-bottom: 10px
     &__payment  
       justify-self: start
+  .navbar
+    &-bottom
+      &--visible
+        overflow: auto
   .modal
+    overflow: auto
     &__dialog
+      overflow: auto
+      width: 92%
       padding: 33px 16px
     &__button 
       margin-bottom: 15px
