@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script
-      defer
-      src="https://api-maps.yandex.ru/2.1/?apikey=2c5cd975-54e2-410e-899f-f2b579e00c86&lang=ru_RU"></script>
-    <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script defer src="js/parallax.js-1.5.0/parallax.js"></script>
   </head>
@@ -24,7 +21,7 @@
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="https://karpovroom.ru/homeworks/tour-plan/" class="logo">
+          <a href="https://karpovroom.ru/tour-plan/" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -174,7 +171,9 @@
             data-href="#rating-modal"
             class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
-            <span class="rating__counter">4.5/5</span>
+            <span class="rating__counter">4.5/</span>
+            <span
+              class="rating__counter rating__counter--small">5</span>
           </div>
           <!-- /.hotel-info__right -->
         </div>
@@ -612,7 +611,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="https://karpovroom.ru/homeworks/tour-plan/"><img
+          <a href="https://karpovroom.ru/tour-plan/"><img
               src="img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo footer__logo"
@@ -782,10 +781,11 @@
               <div class="footer__input-group">
                 <input
                   type="tel"
-                  class="input footer__input"
+                  id="phone_us"
+                  class="input footer__input phone_us"
                   placeholder="Phone Number*"
                   name="phone"
-                  minlength="12"
+                  minlength="18"
                   required
                   />
               </div>
@@ -820,10 +820,11 @@
             required
             /><input
             type="tel"
-            class="input modal__input"
+            id="phone_us"
+            class="input modal__input phone_us"
             placeholder="Phone Number*"
             name="phone"
-            minlength="12"
+            minlength="18"
             required
             />
           <input
@@ -861,9 +862,11 @@
             required
             /><input
             type="tel"
-            class="input modal__input"
+            id="phone_us"
+            class="input modal__input phone_us"
             placeholder="Phone Number*"
             name="phone"
+            minlength="18"
             required
             />
           <input
@@ -914,6 +917,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
